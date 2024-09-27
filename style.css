@@ -1,0 +1,8 @@
+.mySlides {
+    border: 2px solid black; /* Add border */
+    margin: auto; /* Center the images */
+}
+
+#kasy {
+    width: 250px;
+}
