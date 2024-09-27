@@ -1,8 +1,21 @@
 .mySlides {
     border: 2px solid black; /* Add border */
     margin: auto; /* Center the images */
+    width: 100%; /* Ensure images take full width of container */
 }
 
 #kasy {
     width: 300px;
+    position: relative;
+}
+
+.slide-container {
+    display: none;
+    text-align: center;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
