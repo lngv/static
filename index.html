@@ -1,64 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Correct Service</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-<h2 class="w3-center">Manual Slideshow</h2>
-
-<div class="w3-content w3-display-container" id="kasy">
-  <div class="slide-container">
-    <img class="mySlides" src="kso-r.png" alt="KSO-R">
-    <div class="title">KSO-R</div>
-  </div>
-  <div class="slide-container">
-    <img class="mySlides" src="HKSO-L.png" alt="HKSO-L">
-    <div class="title">HKSO-L</div>
-  </div>
-  <div class="slide-container">
-    <img class="mySlides" src="HKSO-W.png" alt="HKSO-W">
-    <div class="title">HKSO-W</div>
-  </div>
-  <div class="slide-container">
-    <img class="mySlides" src="KSO-L.png" alt="KSO-L">
-    <div class="title">KSO-L</div>
-  </div>
-  <div class="slide-container">
-    <img class="mySlides" src="KSO-SM-HKSO-SM.png" alt="KSO-SM-HKSO-SM">
-    <div class="title">KSO-SM-HKSO-SM</div>
-  </div>
-  <div class="slide-container">
-    <img class="mySlides" src="MKSO-L.png" alt="MKSO-L">
-    <div class="title">MKSO-L</div>
-  </div>
-
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+<div class="header">
+  <h1>My Website</h1>
+  <p>Resize the browser window to see the effect.</p>
 </div>
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div>
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
+<div class="footer">
+  <h2>Footer</h2>
+</div>
 
 </body>
 </html>
+
+
